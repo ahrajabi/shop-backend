@@ -50,7 +50,8 @@ func MakeAdminPanel() {
 	mux := http.NewServeMux()
 	// amount to /admin, so visit `/admin` to view the admin interface
 	myAdmin.MountTo("/admin", mux)
-	myAdmin.SetSiteName("Yime admin panel")
+
+	myAdmin.SetSiteName("SHOP admin panel")
 
 	log.Println("Admin panel listening on: 9000")
 	http.ListenAndServe(":9000", mux)
